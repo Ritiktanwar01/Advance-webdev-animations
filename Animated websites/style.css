@@ -207,6 +207,7 @@
     height: 80%;
     width: 22%;
     border-radius: 20px;
+    z-index: 99;
 }
 
 #card{
