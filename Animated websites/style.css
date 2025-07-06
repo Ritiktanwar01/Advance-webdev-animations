@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "montserrat";
+}
+
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: #95C11E;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+
+#cursor-b{
+    height: 400px;
+    width: 400px;
+    background-color: #96c11e50;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    filter: blur(50px);
+}
+
+.nav{
+    height: 145px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 50px;
+    gap: 50px;
+    position: fixed;
+    z-index: 99;
+
+}
+
+.nav img{
+    width: 80px;
+}
+
+.nav h4{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+}
+#video{
+    object-fit: cover;
+    position: fixed ;
+    width: 100%;
+    z-index: -1;
+}
+.main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.37);
+    height: 100% !important;
+}
+
+#page-1{
+    height: 100vh;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+
+#page-1 h1{
+   font-size: 90px;
+   position: relative;
+   font-weight: 900;
+   margin-top: 10px;
+   margin-bottom: 16px;
+}
+
+#page-1 h1::before{
+   content: 'EAT. DRINK. PLAY.';
+   top: -6px;
+   left: -6px;
+   -webkit-text-stroke: 1px #95C11E;
+   z-index: -1;
+   position: absolute;
+   color: black;
+}
+
+#page-1 h2{
+   font-size: 25px;
+   position: relative;
+   font-weight: 800;
+}
+
+#page-1 p{
+   font-size: 14px;
+   position: relative;
+   width: 40%;
+   font-weight: 500;
+}
+
+#page-2{
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+}
+
+#scroller{
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    position: relative;
+    z-index: 10;
+}
+#scroller::-webkit-scrollbar{
+    width: 0;
+}
+
+#scroller h4{
+    display: inline-block;
+    font-size: 130px;
+    font-weight: 800;
+    margin-right: 10px;
+    -webkit-text-stroke: 2px #95C11E;
+    transition: all linear 0.4s;
+    color: transparent;
+}
+
+#scroller h4:hover{
+    display: inline-block;
+    font-size: 130px;
+    font-weight: 800;
+    margin-right: 10px;
+    -webkit-text-stroke: 2px #95C11E;
+    color: #95C11E;
+}
+
+#scroller-1 {
+    display: inline-block;
+    animation-name: scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#aboutus{
+    margin-top: 5%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 6%;
+}
+
+.part-20{
+    width: 20%;
+    height: 100%;
+}
+.part-20 img{
+    width: 90%;
+    border-radius: 8px;
+    height: 100%;
+}
+.part-60{
+    width: 60%;
+    height: 100%;
+}
+
+.part-60 h3{
+    margin-bottom: 8px;
+}
+
+.part-60 p{
+    padding: 0 10%;
+}
+.part-60 .ke{
+    padding: 0 10%;
+    margin-top: 40px;
+}
+
+
+@keyframes scroll {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+.card-container{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 30vh;
+    background-color: #000;
+}
+.card{
+    height: 80%;
+    width: 22%;
+    border-radius: 20px;
+}
+
+#card{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-toptracer-1024x683.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+    object-fit: contain;
+}
+#card2{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-lessons-1024x683.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+    object-fit: contain;
+}
+#card3{
+    background-image: url("https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-ag-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1");
+    object-fit: contain;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #95C11E;
+    padding: 28px;
+    border-radius: 20px;
+    padding-top: 30px;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overlay h4{
+    color: #000;
+    font-size: 22px;
+    margin-bottom: 38px;
+}
+
+.overlay p{
+    color: #000;
+    font-weight: 600;
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+.card:hover{
+    transform: rotate3d(-1,1,0,12deg);
+}
+.green-div{
+    height: 30vh;
+    background-color: #95C11E;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    font-size: 18px;
+}
+.dot-images{
+    width: 15%;
+    background-image: url('https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg');
+    height: 100%;
+    object-fit:fill;
+}
