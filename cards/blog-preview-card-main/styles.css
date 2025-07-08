@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree';
+}
+
+.main {
+    background-color: #F4D04E;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    height: 70vh;
+    width: 24vw;
+    border-radius: 18px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45%;
+}
+
+.card-image img {
+    width: 90%;
+    border-radius: 15px;
+}
+
+.text-section-wrapper {
+
+    height: 42%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-section {
+    width: 90%;
+    height: 100%;
+}
+
+.first-text {
+    width: 30%;
+    height: 14%;
+    font-weight: 600;
+    font-size: .8vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4D04E;
+    border-radius: 6px;
+    margin-bottom: 2.4vh;
+}
+
+.second-text p {
+    font-size: 1vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.726);
+    margin-bottom: 2.4vh;
+}
+
+.Heading-text-2 h2 {
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+    transition: .3s all ease;
+}
+
+.Heading-text-2 h2:hover {
+    color: #F4D04E;
+    transition: .3s all ease;
+}
+
+.fontlow {
+    color: #6B6B6B;
+}
+
+.user-card {
+    height: 13%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.user-img {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.user-img img {
+    width: 2.5vw;
+}
+
+.name {
+    font-weight: 700;
+}
+
+@media (max-width:600px) {
+    .card {
+        height: 60vh;
+        width: 80%;
+        border-radius: 18px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-text {
+        width: 30%;
+        height: 14%;
+        font-weight: 600;
+        font-size: 2.9vw;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F4D04E;
+        border-radius: 6px;
+        margin-bottom: 2.4vh;
+    }
+
+    .second-text {
+        width: 90%;
+    }
+
+    .second-text p {
+        font-size: 2.5vw;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.726);
+        margin-bottom: 2.4vh;
+    }
+
+    .Heading-text-2 h2 {
+        font-size: 5vw;
+        margin-bottom: 2vh;
+    }
+
+    .user-img {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        gap: 4vw;
+    }
+
+    .text-section-wrapper {
+
+        height: 40%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .user-img img {
+        width: 10vw;
+    }
+}
